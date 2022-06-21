@@ -1,0 +1,39 @@
+<!-- 引入本身的css -->
+<link rel="stylesheet" href="../../dist/css/updateuser.min.css">
+<div class="pannel" style="border: 1px solid #ddd;border-radius: 3px;">
+    <!-- 头部 -->
+    <div class="update-head">
+        个人资料
+    </div>
+    <!-- 主体 -->
+    <div class="update-body">
+        <div class="form-group d-flex">
+            <label class="col-sm-4" for="nickname">新昵称</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-input" id="nickname" placeholder="请输入昵称">
+                <span></span>
+            </div>
+        </div>
+        <div class="form-group d-flex">
+            <label class="col-sm-4" for="email">新邮箱</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-input" id="email" placeholder="请输入邮箱">
+                <span></span>
+            </div>
+        </div>
+        <div class="form-group d-flex">
+            <label class="col-sm-4" for="phone">新电话</label>
+            <div class="col-sm-8">
+                <input type="tel" class="form-input" id="phone" placeholder="请输入电话">
+                <span></span>
+            </div>
+        </div>
+        <div class="col-sm-offset-5">
+            <button type="button" class="btn btn-primary" id="update-btn">保存</button>
+        </div>
+    </div>
+</div>
+<!-- 判断是否登录 -->
+<script src="../../dist/js/function.min.js"></script>
+<!-- 引入本身的js -->
+<script src="../../dist/js/updateuser.min.js"></script>

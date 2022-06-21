@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="../dist/css/personal.min.css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- 主体左侧内容 -->
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                投资项目
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                借款项目
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#">借款项目</a></li>
+                                <li><a href="#">还款明细</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                我的账户
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li class="active"><a href="#personal/getuserinfo">账户信息</a></li>
+                                <li><a href="#personal/updateuser">更新资料</a></li>
+                                <li><a href="#">实名认证</a></li>
+                                <li><a href="#">银行卡管理</a></li>
+                                <li><a href="#">登录记录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                资产详情
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><a href="#">账户流水</a></li>
+                                <li><a href="#">充值明细</a></li>
+                                <li><a href="#">提现记录</a></li>
+                                <li><a href="#">收款明细</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                个人资料
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" id="personal-right">
+            <!-- 动态加载 -->
+        </div>
+    </div>
+</div>
+<script src="../dist/js/personal.min.js"></script>

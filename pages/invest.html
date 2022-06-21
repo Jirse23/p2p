@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="../dist/css/invest.min.css">
+<!-- 分页插件 -->
+<link rel="stylesheet" href="../lib/xlPaging/css/xlPaging.css">
+<div class="container">
+    <h4>投资列表</h4>
+    <form action="#">
+        <div style="margin: 20px 0px;">
+            <span>标的状态</span>
+            <div style="margin-left: 30px;" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn active">
+                    <input type="radio" name="options" id="option1" checked>&emsp;全部&emsp;
+                </label>
+                <label class="btn">
+                    <input type="radio" name="options" id="option2">&emsp;招标中&emsp;
+                </label>
+                <label class="btn">
+                    <input type="radio" name="options" id="option3">&emsp;还款中&emsp;
+                </label>
+            </div>
+        </div>
+    </form>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">借款人</th>
+                <th scope="col">借款标题</th>
+                <th scope="col">年利率</th>
+                <th scope="col">金额</th>
+                <th scope="col">还款方式</th>
+                <th scope="col">进度</th>
+                <th scope="col">操作</th>
+            </tr>
+        </thead>
+        <tbody id="borrow-list">
+            <!-- 动态加载 -->
+        </tbody>
+    </table>
+    <ul id="page">
+        <!-- 动态加载 -->
+    </ul>
+    <div style="height:50px"></div>
+</div>
+<!-- 分页插件 jq index引用过了的所有不用引用 -->
+<script src="../lib/xlPaging/js/jquery.xlPaging.js"></script>
+<script src="../dist/js/home.min.js"></script>
+<script src="../dist/js/invest.min.js"></script>

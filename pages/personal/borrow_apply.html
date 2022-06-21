@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="../../dist/css/borrow_apply.min.css">
+<div class="tip-info">
+    <h3>信用借款</h3>
+    <p>
+        <span class="text-info">授信额度：</span>
+        <span class="text-danger">2000 </span>
+        <span class="text-info">可借金额：</span>
+        <span class="text-danger">2000 </span>
+    </p>
+</div>
+<div class="page-header">
+    借款信息<label id="borrow-info">
+        <!-- 动态生成 -->
+    </label>
+</div>
+<div class="page-body">
+    <div class="form-group d-flex">
+        <label class="col-sm-3">借款金额</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-input" id="borrowmoney">
+            <span class="input-group-addon">元</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">借款利息</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-input" id="interest">
+            <span class="input-group-addon">%</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">借款期限</label>
+        <div class="col-sm-9">
+            <select id="borrowtime" class="sel">
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+            </select>
+            <span class="input-group-addon">月</span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">还款方式</label>
+        <div class="col-sm-9" style="padding-top: 9px;">
+            <input type="radio" name="repaytype" checked value="0">按月分期
+            <input type="radio" name="repaytype" value="1">按月分期
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">最小投标</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-input" id="minbid">
+            <span class="input-group-addon">元</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">投标奖金</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-input" id="bouns">
+            <span class="input-group-addon">%</span>
+            <span></span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">招标天数</label>
+        <div class="col-sm-9">
+            <select id="days" class="sel">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <span class="input-group-addon">月</span>
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">借款标题</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-input" id="title" style="width: 438px;border-radius: 0px;">
+        </div>
+    </div>
+    <div class="form-group d-flex">
+        <label class="col-sm-3">借款描述</label>
+        <div class="col-sm-9">
+            <textarea id="info" rows="4"
+                style="width: 438px;height: 94;resize: none;border: 1px solid #ccc;text-indent: 10px;"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn-primary" id="borrow-btn">提交申请</button>
+    </div>
+</div>
+<!-- 判断是否登录 -->
+<script src="../../dist/js/function.min.js"></script>
+<script src="../../dist/js/borrow_apply.min.js"></script>

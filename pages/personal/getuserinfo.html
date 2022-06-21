@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="../../dist/css/getuserinfo.min.css">
+<div class="account" style="border: 1px solid #ddd;border-radius: 3px;">
+    <div class="account-head clearfix">
+        <div class="imgs float-left">
+            <img src="../../images/head_icon.jpg">
+        </div>
+        <div class="ac-head float-left">
+            <p>
+                <span>昵称:</span>
+                <span id="nickname"></span>
+            </p>
+            <p>
+                <span>用户名:</span>
+                <span id="username"></span>
+            </p>
+            <p>
+                <span>总金额:</span>
+                <span id="totalmoney"></span>
+            </p>
+            <p>
+                <span>可用金额:</span>
+                <span id="usablemoney"></span>
+            </p>
+            <p>
+                <span>冻结金额:</span>
+                <span id="blockedmoney"></span>
+            </p>
+            <p>
+                <span>最后登录时间:</span>
+                <span id="lastlogintime"></span>
+            </p>
+        </div>
+    </div>
+    <div class="account-body">
+        <div class="ab-head row">
+            <div class="col-sm-4">总金额:
+                <span id="totalmoney2"></span>
+            </div>
+            <div class="col-sm-4">可用金额:
+                <span id="usablemoney2"></span>
+            </div>
+            <div class="col-sm-4">冻结金额:
+                <span id="blockedmoney2"></span>
+            </div>
+        </div>
+        <div class="ab-body d-flex justify-content-between">
+            <a class="btn btn-primary btn-info" href="../../recharge.html">账户充值</a>
+            <a class="btn btn-primary btn-danger" href="">账户提现</a>
+        </div>
+    </div>
+    <div id="echarts-container">
+
+    </div>
+</div>
+<script src="../../dist/js/function.min.js"></script>
+<!-- 引用echarts -->
+<script src="../../lib/echarts/echarts.min.js"></script>
+<script src="../../dist/js/getuserinfo.min.js"></script>
