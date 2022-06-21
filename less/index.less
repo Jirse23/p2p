@@ -1,0 +1,71 @@
+@import './var.less';
+// 顶部导航
+.top-nav {
+  .navbar-brand {
+    i {
+      &:hover {
+        color: @baseColor;
+      }
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #ccc;
+        font-size: 14px;
+        &:hover {
+          color: @baseColor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+//内容导航
+.content-nav {
+  .navbar {
+    height: 80px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          display: inline-block;
+          padding: 0px;
+          line-height: 80px;
+          width: 100px;
+          text-align: center;
+          &:hover {
+            background-color: #ddd;
+            color: @baseColor;
+          }
+          &.active {
+            background-color: #ddd;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 正则表达式判断  加载borrow_info中的
+.error{
+  color: red;
+  font-size: 12px;
+}
+
+// 底部
+.footer {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  margin: 20px 0px;
+  font-size: 14px;
+  .col-sm-2 {
+    .b-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

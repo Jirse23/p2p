@@ -1,0 +1,88 @@
+@import "./var.less";
+// 主体
+.main {
+    // 轮播图
+    .banner {
+      padding: 10px 15px;
+      .carousel-indicators {
+        li {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+      }
+    }
+    //3个特色
+    .feature {
+      .col-md-4 {
+        background: url('../../images/feature01.png') no-repeat;
+        div {
+          padding-left: 70px;
+          h4 {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px;
+            color: #ccc;
+          }
+        }
+      }
+      .col-md-4:nth-child(2) {
+        background: url('../../images/feature02.png') no-repeat;
+      }
+      .col-md-4:nth-child(3) {
+        background: url('../../images/feature03.png') no-repeat;
+      }
+    }
+    //借款列表
+    .borrow {
+      .borrow-header {
+        border-bottom: 1px solid #ccc;
+        h3 {
+          color: @baseColor;
+          border-bottom: 4px solid @baseColor;
+          font-size: 24px;
+          margin-bottom: -1px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+    // 新闻列表
+    .news {
+      .col-md-6 {
+        margin: 10px 0px;
+      }
+      .news-header {
+        border-bottom: 1px solid #ccc;
+        h3 {
+          color: @baseColor;
+          border-bottom: 4px solid @baseColor;
+          font-size: 24px;
+          margin-bottom: -1px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+      .list-group  {
+        margin: 15px 0px;
+        .list-group-item {
+          padding: 8px 0px;
+          a{
+            font-size: 14px;
+            text-decoration: none;
+            color: #555;
+            &:hover {
+              color: @baseColor;
+            }
+            p {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
